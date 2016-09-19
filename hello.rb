@@ -1,5 +1,6 @@
 require 'sinatra'
+require './name'
 
-get '/' do 
+post '/' do 
   erb :index
 end
