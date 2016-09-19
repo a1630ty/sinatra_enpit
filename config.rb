@@ -6,8 +6,8 @@ get '/' do
 erb :index
 end
 
-get '/hello' do
-erb :hello
+get '/about' do
+erb :about
 end
 
 not_found do
