@@ -1,0 +1,19 @@
+<p>ようこそ 
+<%= 
+if @name == nil
+"ゲスト"
+else
+@name
+end
+
+%> さん</p>
+
+<p>もしあなたが<%= @name %>さんでない場合は<a href="/login">ログインページへ移動</a>して下さい</p>
+
+<h3>自己紹介</h3>
+<p>自己紹介メッセージの更新はこちら</p>
+
+<table>
+<tr><th>名前</th><td></td></tr>
+<tr><th>所属</th><td></td></tr>
+</table>
