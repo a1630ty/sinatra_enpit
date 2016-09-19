@@ -1,3 +1,4 @@
+<h1>自己紹介ページ</h1>
 <p>ようこそ 
 <%= 
 if @name == nil
@@ -10,11 +11,11 @@ end
 
 <p>もしあなたが<%= @name %>さんでない場合は<a href="/login">ログインページへ移動</a>して下さい</p>
 
-<h3>自己紹介</h3>
+<h2>自己紹介</h2>
 <p>自己紹介メッセージの更新は<a href="editUser">こちら</a></p>
 
-<table>
+<table class="table table-bordered" style="background-color:white;">
 <tr><th>名前</th><td><%= @full_name %></td></tr>
 <tr><th>所属</th><td><%= @belong %></td></tr>
-<tr><th>一言メッセージ<th><td><%= @message %></td></tr>
+<tr><th>一言メッセージ</th><td><%= @message %></td></tr>
 </table>
