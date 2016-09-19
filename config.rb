@@ -11,8 +11,7 @@ erb :hello
 end
 
 not_found do
-"aaa"
-#erb :error
+erb :error
 end
 
 
