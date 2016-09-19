@@ -15,6 +15,9 @@ if(session['name'] == nil)
 redirect to ('/login')
 end
 @name = session['name']
+@full_name=session['full_name']
+@belong=session['belong']
+@message=session['message']
 erb :user
 end
 
