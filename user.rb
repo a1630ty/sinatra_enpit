@@ -18,6 +18,17 @@ end
 erb :user
 end
 
+get '/editUser' do
+erb :editUser
+end
+
+post '/editUser' do
+session['full_name']=params['full_name']
+session['message']=params['message']
+session['belong']=params['belong']
+redirect to '/user'
+end
+
 #get '/user/:name' do |n|
 #@name = n
 #session['name']=@name
