@@ -11,7 +11,7 @@ erb :about
 end
 
 not_found do
-'ページが存在しません'
+erb :error
 end
 
 
